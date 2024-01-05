@@ -1,0 +1,212 @@
+/**** REGLAS GENERALES ****/
+/* Definir variables colores */
+:root {
+    --text-color:rgb(23, 23, 23);
+    --white-color:rgb(255, 255, 255);
+    --black-color:rgb(0, 0, 0);
+    --softblack-color: rgb(63, 73, 73);
+    --red-color:rgb(255, 0, 0);
+    --grey-color:rgb(157, 161, 170);
+    --mini-font:10px;
+    --small-font:15px;
+    --medium-font:40px;
+    --big-font:60px;
+}
+
+/* Reset margins and paddings */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    text-decoration: none;
+    list-style: none;
+}
+/**** REGLAS COMUNES PÁGINAS ****/
+body{
+    background-color: var(--white-color);
+}
+.container {
+    color: var(--softblack-color);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:var(--small-font);
+    margin:20px auto;
+    width: 80%;
+}
+header{
+    background-color: var(--black-color);
+    padding: 5px;
+}
+.link-logo{
+    display: flex;
+    margin-bottom: 5px;
+    justify-content:center;
+}
+a{
+    color: var(--white-color);
+    text-align: center;
+}
+a:hover{
+    font-weight: bold;
+}
+.active{
+    font-weight: bold;
+    font-style: italic;
+}
+.menu-links{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    margin-bottom: 5px;
+}
+/*Títulos*/
+h1 {
+    color: var(--softblack-color);
+    font-size:var(--big-font);
+    font-weight:lighter;
+    text-align: center;
+}
+h2 {
+    color: var(--softblack-color);
+    font-size:var(--medium-font);
+    font-weight:lighter;
+    text-align: left;
+    margin-bottom: 20px;
+}
+/*Fuentes especiales*/
+.font-red{
+    color: red;
+}
+.font-red p{
+    margin-bottom: 5px;
+}
+/*Párrafos*/
+.parrafos{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+p {
+    margin-bottom: 20px;
+}
+figcaption{
+    font-size:var(--mini-font);
+    margin-top: 10px;
+    text-align: right;
+    text-align: end;
+}
+main img{
+    display: flex;
+    height: 60%;
+    width: 100%;
+}
+/*Numeraciones*/
+.numeraciones{
+    margin-bottom: 20px;
+}
+.numeraciones li{
+    margin-left: 100px;
+    list-style: square;
+}
+.numeraciones2 li{
+    margin-left: 150px;
+    list-style: square;
+}
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: 1px auto;
+    width: 80%;
+}
+.embed-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+.video-figcaption {
+    position: relative;
+    padding-bottom: 5%;
+    height: 0;
+    overflow: hidden;
+    margin: 1px auto;
+    width: 80%;
+}
+.parrafos-gris{
+    background-color: var(--grey-color);
+    margin-bottom: 100px;
+    margin-top: 30px;
+    text-align: center;
+}
+.parrafos-autor{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    margin-bottom: 5px;
+    margin:50px auto;
+    width: 80%;
+}
+.parrafos-autor img{
+    width:200px;
+    height:200px;
+    border-radius:150px;
+}
+footer{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 50px;
+    text-align: center;
+}
+/*PÁGINA TIPOS DE ROBOTS*/
+.parrafos-dicho{
+    background-color: var(--grey-color);
+    border-left: red 5px solid;
+    display: flex;
+    flex-direction: column;
+    margin:20px auto;
+    padding: 20px;
+    width: 40%;
+}
+.parrafos-dicho p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+}
+.parrafos-img{
+    display: flex;
+    flex-direction:row;
+    margin:auto;
+    width: 40%;
+}
+.parrafos-img img{
+    height: 25px;
+    margin-right: 5px;
+    width: 25px;
+}
+.parrafos-img p{
+    margin-top: 10px;
+    width: 90%;
+}
+.parrafos-puntos{
+    display: flex;
+    flex-direction:column;
+    margin:auto;
+    width: 40%;
+}
+/*PÁGINA ROBOTS DE FICCIÓN*/
+.container-center{
+    align-items: center;
+    display: flex;
+    flex-direction:column;
+    margin:auto;
+    width: 40%;
+}
+.container-center figcaption{
+    text-align: center;
+    margin-top: 20px;
+}
